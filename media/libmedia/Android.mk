@@ -64,6 +64,8 @@ LOCAL_SRC_FILES:= \
     SoundPool.cpp \
     SoundPoolThread.cpp
 
+LOCAL_CFLAGS += -Wno-error=strict-aliasing
+
 LOCAL_SRC_FILES += ../libnbaio/roundup.c
 
 ifeq ($(BOARD_USES_LIBMEDIA_WITH_AUDIOPARAMETER),true)

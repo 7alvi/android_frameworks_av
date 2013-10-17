@@ -45,6 +45,8 @@ LOCAL_STATIC_LIBRARIES :=       \
     libstagefright_rtsp         \
     libmedia_helper             \
 
+LOCAL_CFLAGS += -Wno-error=strict-aliasing
+
 LOCAL_C_INCLUDES :=                                                 \
     $(call include-path-for, graphics corecg)                       \
     $(TOP)/frameworks/av/media/libstagefright/include               \

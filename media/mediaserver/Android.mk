@@ -29,6 +29,8 @@ LOCAL_SHARED_LIBRARIES := \
 	liblog \
 	libbinder
 
+LOCAL_CFLAGS += -Wno-error=strict-aliasing
+
 LOCAL_STATIC_LIBRARIES := \
 	libregistermsext
 

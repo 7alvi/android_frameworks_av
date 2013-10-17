@@ -66,6 +66,8 @@ LOCAL_SRC_FILES:=                         \
         ExtendedExtractor.cpp             \
         QCUtils.cpp                       \
 
+LOCAL_CFLAGS += -Wno-error=strict-aliasing
+
 LOCAL_C_INCLUDES:= \
         $(TOP)/frameworks/av/include/media/stagefright/timedtext \
         $(TOP)/frameworks/native/include/media/hardware \
